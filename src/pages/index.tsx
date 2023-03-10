@@ -11,10 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const icons = [
-    'archive','archive-check','archive-down','archive-up','bell','bolt','box','box-rotate','box-search','camera','chevron-bottom','chevron-left','chevron-right','chevron-top',
-    'clipboard','earth','file','file-check','file-down','file-search','file-up','flag','folder','folder-check','folder-down','folder-search','folder-up','headphones','home','link',
-    'link-break','lock-locked','lock-unlocked','monitor','pencil','phone','plug','search','shop','wand','align-left','align-right','align-top','align-bottom','frame','clock','config-horizontal',
-    'config-vertical',
+    'align-bottom','align-left','align-right','align-top','archive','archive-check','archive-down','archive-up','bell','bolt','box','box-rotate','box-search','camera','chevron-bottom','chevron-left','chevron-right','chevron-top','clipboard','clock','config-horizontal','config-vertical','earth','file','file-check','file-down','file-search','file-up','flag','folder','folder-check','folder-down','folder-search','folder-up','frame','headphones','home','link','link-break','lock-locked','lock-unlocked','monitor','pencil','phone','plug','search','shop','wand'
   ];
 
   const pro = [

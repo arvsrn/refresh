@@ -31,7 +31,7 @@ export default function Home() {
         <meta name="description" content="Beautiful 15px icons, refresh'd weekly." />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://refresh.aarv.me/" />
         <meta property="og:title" content="refresh." />
         <meta property="og:description" content="Beautiful 15px icons, refresh'd weekly." />
         <meta property="og:image" content="https://cdn.discordapp.com/attachments/1023648332750520341/1083766698148122654/image.png" />

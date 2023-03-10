@@ -1,0 +1,44 @@
+@import "@radix-ui/colors/gray.css";
+@import "@radix-ui/colors/grayDark.css";
+@import "@radix-ui/colors/orange.css";
+@import "@radix-ui/colors/orangeDark.css";
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;  
+}
+
+:root {
+  --ease: cubic-bezier(.01,.72,.54,1);
+}
+
+@font-face {
+  font-family: NNGroteskBold;
+  src: url('../../public/NON_Grotesk/non-natural-grotesk-trialversion-bold.otf');
+}
+
+@font-face {
+  font-family: NNGroteskCopy;
+  src: url(../../public/NON_Grotesk/non-natural-grotesk-trialversion-regular.otf);
+}
+
+::selection {
+  background: rgba(249, 187, 19, 0.15);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray8);
+  border-radius: 5px;
+}

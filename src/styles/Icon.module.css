@@ -1,0 +1,57 @@
+.main {
+    width: 128px;
+    height: 128px;
+
+    background: transparent;
+    border: 1px solid var(--gray4);
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    transition: transform 0.15s var(--ease);
+
+    user-select: none;
+}
+
+.main:hover {
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.svg {
+    transform: scale(2);
+    width: fit-content;
+    height: fit-content;
+}
+
+.label {
+    font-family: NNGroteskCopy;
+    font-size: 12.25px;
+    color: var(--gray11);
+    user-select: none;
+
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.prosOnly {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--gray11);
+}
+
+.main:active {
+    transform: scale(0.95);
+}

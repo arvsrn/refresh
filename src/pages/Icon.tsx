@@ -20,7 +20,7 @@ export default function Icon(props: Props) {
                 props.showPro();
             } else {
                 navigator.clipboard.writeText(self.innerHTML);
-                toast.success(`Copied icon '${props.name}'`);
+                toast.success(`Copied icon "${props.name}"`);
             }
         }}>
             <div id={props.name} className={styles.svg}>

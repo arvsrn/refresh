@@ -7,7 +7,7 @@ export default function Plans() {
     return (
         <main className={styles.main}>
             <h1 className={styles.heading}>You must be pro for that.</h1>
-            <p className={styles.description}>Purchase a lifetime license <span className={styles.orange}>$49.99</span>.</p>
+            <p className={styles.description}>Purchase a lifetime license for a minimum of <span className={styles.orange}>$25</span> to get access to all pro icons.</p>
             <button className={styles.bepro} onClick={() => window.location.assign('https://refresh.lemonsqueezy.com/checkout/buy/f160dd62-f358-43b6-bd98-9e6622b2daff')}>
                 Let's go 
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ transform: 'translateY(1px)' }}>

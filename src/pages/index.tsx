@@ -13,11 +13,12 @@ export default function Home() {
   const icons = [
     'archive','archive-check','archive-down','archive-up','bell','bolt','box','box-rotate','box-search','camera','chevron-bottom','chevron-left','chevron-right','chevron-top',
     'clipboard','earth','file','file-check','file-down','file-search','file-up','flag','folder','folder-check','folder-down','folder-search','folder-up','headphones','home','link',
-    'link-break','lock-locked','lock-unlocked','monitor','pencil','phone','plug','search','shop','wand',
+    'link-break','lock-locked','lock-unlocked','monitor','pencil','phone','plug','search','shop','wand','align-left','align-right','align-top','align-bottom','frame','clock','config-horizontal',
+    'config-vertical',
   ];
 
   const pro = [
-    'archive-check', 'archive-down', 'archive-up', 'earth', 'file-check', 'file-search', 'file-search', 'headphones', 'plug', 'wand', 'phone', 'monitor', 'camera', 'shop', 'folder-up', 'folder-down', 'folder-check', 'folder-search'
+    'archive-check', 'earth', 'file-check', 'file-search', 'file-search', 'headphones', 'plug', 'wand', 'phone', 'monitor', 'camera', 'shop', 'folder-up', 'folder-down', 'folder-check', 'folder-search'
   ];
 
   let [mouse, setMouse] = useState<[number, number]>([0, 0]);
@@ -59,7 +60,7 @@ export default function Home() {
             <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.1457 11.5914C8.82468 13.9143 5.06172 13.9143 2.74074 11.5914C0.419754 9.26855 0.419754 5.50247 2.74074 3.17963C5.06172 0.85679 8.82468 0.85679 11.1457 3.17963C13.4667 5.50247 13.4667 9.26855 11.1457 11.5914ZM11.1457 11.5914L16.1122 16.562" stroke="currentColor" stroke-width="2"/>
             </svg>
-            <input spellCheck="false" autoComplete="false" id="search" type="text" className={styles.search} placeholder='Search 40 icons' />
+            <input spellCheck="false" autoComplete="false" id="search" type="text" className={styles.search} placeholder={`Search ${icons.length} icons`} />
           </div>
           <button className={styles.bepro} id="bepro" onMouseMove={e => {
             const element = document.getElementById('bepro');

@@ -93,3 +93,9 @@
 .bepro:active {
     transform: scale(0.95);
 }
+
+@media only screen and (max-width: 444.44px) {
+    .main {
+        width: 90vw;
+    }
+}

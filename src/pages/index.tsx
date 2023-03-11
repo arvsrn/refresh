@@ -83,7 +83,7 @@ export default function Home() {
                   const currentIcons_ = [];
 
                   for (const icon of icons) {
-                    if (icon.includes(value)) currentIcons_.push(icon);
+                    if (RegExp(value.toLowerCase()).test(icon)) currentIcons_.push(icon);
                   }
 
                   setCurrentIcons(currentIcons_);

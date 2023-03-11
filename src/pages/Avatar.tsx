@@ -2,7 +2,7 @@ import styles from '@/styles/Avatar.module.css';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import React from 'react';
 import { useAtom } from 'jotai';
-import { accountState } from './server';
+import { accountState } from '../server';
 
 export default function Avatar() {
     const [state, setState] = useAtom(accountState);

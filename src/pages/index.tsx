@@ -7,7 +7,7 @@ import { CSSProperties, useState } from 'react';
 import Blanket from './Blanket';
 import Plans from './Plans';
 import Avatar from './Avatar';
-import { signInWitPopup, accountState } from './server';
+import { signInWitPopup, accountState } from '../server';
 import { useAtom } from 'jotai';
 
 const inter = Inter({ subsets: ['latin'] })

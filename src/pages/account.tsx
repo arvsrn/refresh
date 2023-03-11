@@ -2,7 +2,7 @@ import Head from "next/head";
 import React, { useState } from 'react';
 import styles from "@/styles/Account.module.css"
 import { useAtom } from "jotai";
-import { accountState } from "./server";
+import { accountState } from "../server";
 import { Toaster, toast } from "sonner";
 import { useDetectClickOutside } from 'react-detect-click-outside';
 import { motion } from 'framer-motion';

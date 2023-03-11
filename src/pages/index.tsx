@@ -6,6 +6,7 @@ import { Toaster, toast } from 'sonner';
 import { CSSProperties, HTMLInputTypeAttribute, useState } from 'react';
 import Blanket from './Blanket';
 import Plans from './Plans';
+import Avatar from './Avatar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,6 +55,7 @@ export default function Home() {
         </div>
 
         <div className={styles.navbar}>
+          <Avatar></Avatar>
           <div className={styles.searchContainer} onClick={() => document.getElementById('search')?.focus()}>
             <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.1457 11.5914C8.82468 13.9143 5.06172 13.9143 2.74074 11.5914C0.419754 9.26855 0.419754 5.50247 2.74074 3.17963C5.06172 0.85679 8.82468 0.85679 11.1457 3.17963C13.4667 5.50247 13.4667 9.26855 11.1457 11.5914ZM11.1457 11.5914L16.1122 16.562" stroke="currentColor" stroke-width="2"/>

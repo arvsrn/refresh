@@ -48,6 +48,6 @@ export const signInWitPopup = (setState: (state: string) => void) => {
             const errorCode = error.code;
             const errorMessage = error.message;
             
-            toast(`${errorCode}: ${errorMessage}`);
+            toast.error(`${errorCode}: ${errorMessage}`);
         });
 };

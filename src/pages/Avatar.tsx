@@ -16,7 +16,7 @@ export default function Avatar() {
             </DropdownMenu.Trigger>
 
             <DropdownMenu.Portal>
-                <DropdownMenu.Content className={styles.DropdownMenuContent} sideOffset={5}>
+                <DropdownMenu.Content side="right" className={styles.DropdownMenuContent} sideOffset={5}>
                     <DropdownMenu.Item className={styles.DropdownMenuItem} onClick={() => window.location.assign('/account')}>
                         Account
                     </DropdownMenu.Item>

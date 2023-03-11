@@ -19,11 +19,14 @@ export default function Home() {
     'file-up','flag','folder','folder-check','folder-down','folder-search','folder-up','frame','headphones','home','link','link-break','lock-locked','lock-unlocked','monitor',
     'pencil','phone','plug','search','shop','wand','star','send-to-front','send-to-back','component','copy','cup','cup-straw','cancel','folder-cancel','file-cancel','cpu','database',
     'database-add','database-error','database-minus','file-add','file-minus','folder-add','folder-minus','check','balloon','emoji-sad','emoji-smile','emoji-emotionless',
-    'chemistry-flask','image','send','power','server','printer'
-  ];
+    'chemistry-flask','image','send','power','server','printer','user','users','brightness-low','brightness','user-add','user-minus','moon','ufo','keyboard','bank','pin','pin-rotated',
+    'temprature-low','temprature-high','education','fan','gift','briefcase','gift-2','crown','90-degrees','45-degrees'
+  ].sort();
 
   const pro = [
-    'archive-check', 'earth', 'file-check', 'file-search', 'file-search', 'headphones', 'plug', 'wand', 'phone', 'monitor', 'camera', 'shop', 'folder-up', 'folder-down', 'folder-check', 'folder-search', 'align-top','align-bottom','align-left','align-right','cup','cup-straw','send-to-front','send-to-back','database-add','database-error','database-minus',
+    'archive-check', 'earth', 'file-check', 'file-search', 'file-search', 'headphones', 'plug', 'wand', 'phone', 'monitor', 'camera', 'shop', 'folder-up', 'folder-down', 'folder-check', 
+    'folder-search', 'align-top','align-bottom','align-left','align-right','cup','cup-straw','send-to-front','send-to-back','database-add','database-error','database-minus',
+    'chemistry-flask','printer','star','server','ufo'
   ];
 
   let [mouse, setMouse] = useState<[number, number]>([0, 0]);

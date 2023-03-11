@@ -1,0 +1,137 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0px;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden !important;
+    
+    background: var(--gray1);
+}
+
+.container {
+    width: 500px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.heading {
+    font-family: NNGroteskBold;
+    font-size: 16px;
+    color: var(--gray12);
+}
+
+.staticData {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+
+    width: 100%;
+    height: fit-content;
+}
+
+.staticData > .textDark {
+    font-size: 14px;
+    color: var(--gray12);
+    width: 100px;
+}
+
+.staticData > .textLight {
+    font-size: 14px;
+    color: var(--gray11);   
+    width: 100%;
+    flex: 1;
+}
+
+.input {
+    height: 28px;
+    width: calc(100% + 8px);
+    flex: 1;
+
+    background: transparent;
+    border: 1px solid var(--gray6);
+
+    color: var(--gray12);
+    transform: translateX(-8px);
+    padding-left: 8px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.input:active, .input:focus {
+    border: 1px solid var(--gray8);
+}
+
+.input:placeholder {
+    color: var(--gray11);
+}
+
+.button {
+    background: var(--red3);
+    border: 1px solid var(--red6);
+    border-radius: 6px;
+
+    color: var(--red11);
+    
+    padding: 6px 12px;
+    width: fit-content;
+    height: 30px;
+    
+    outline: none;
+    cursor: pointer;
+
+    transition: all 0.2s var(--ease);
+    margin-left: auto;
+    user-select: none;
+}
+
+.button:hover {
+    background: var(--red4);
+    border: 1px solid var(--red7);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.backButton {
+    background: var(--gray3);
+    border: 1px solid var(--gray6);
+    border-radius: 6px;
+
+    color: var(--gray11);
+    
+    padding: 6px 12px;
+    width: fit-content;
+    height: 30px;
+    
+    outline: none;
+    cursor: pointer;
+
+    transition: all 0.2s var(--ease);
+    user-select: none;
+}
+
+.backButton:hover {
+    background: var(--gray4);
+    border: 1px solid var(--gray7);
+}
+
+.backButton:active {
+    transform: scale(0.95);
+}
+
+.actions {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+}

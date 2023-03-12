@@ -22,14 +22,16 @@ export default function Home() {
     'round-bottom-flask','image','send','power','server','printer','user','users','brightness-low','brightness','user-add','user-minus','moon','ufo','keyboard','bank','pin','pin-rotated',
     'temprature-low','temprature-high','education','fan','gift','briefcase','gift-2','crown','90-degrees','45-degrees','calendar','calendar-add','calendar-minus','calendar-error',
     'calendar-search','trend-downwards','trend-upwards','cloud-rain','cloud','image-add','image-minus','image-cancel','camera-add','camera-minus','camera-search','camera-cancel',
-    'align-center-horizontal','align-center-vertical','battery-low','battery-high','battery-medium','erlenmeyer-flask','test-tube','cursor'
+    'align-center-horizontal','align-center-vertical','battery-low','battery-high','battery-medium','erlenmeyer-flask','test-tube','cursor','image-locked','file-locked','video-locked',
+    'database-locked','folder-locked',
   ].sort();
 
-  const pro = [
-    'archive-check','archive-down','archive-up','box-rotate','box-search','brightness','brightness-low','calendar-add','calendar-minus','calendar-error','calendar-search','chemistry-flask',
-    'database-add','database-error','database-minus','earth','file-add','file-minus','file-up','file-down','file-cancel','file-check','file-search','folder-up','folder-down','folder-search',
-    'folder-cancel','folder-check','folder-minus','folder-add','printer','temprature-high','temprature-low','ufo','wand','image-add','image-minus','image-cancel','camera-add',
-    'camera-minus','camera-search','camera-cancel','align-center-horizontal','align-center-vertical','battery-low','battery-high','battery-medium',
+  const pro: string[] = [
+    // 'archive-check','archive-down','archive-up','box-rotate','box-search','brightness','brightness-low','calendar-add','calendar-minus','calendar-error','calendar-search','chemistry-flask',
+    // 'database-add','database-error','database-minus','earth','file-add','file-minus','file-up','file-down','file-cancel','file-check','file-search','folder-up','folder-down','folder-search',
+    // 'folder-cancel','folder-check','folder-minus','folder-add','printer','temprature-high','temprature-low','ufo','wand','image-add','image-minus','image-cancel','camera-add',
+    // 'camera-minus','camera-search','camera-cancel','align-center-horizontal','align-center-vertical','battery-low','battery-high','battery-medium','image-locked','file-locked',
+    // 'video-locked','database-locked','folder-locked',
   ];
 
   let [mouse, setMouse] = useState<[number, number]>([0, 0]);
@@ -77,8 +79,10 @@ export default function Home() {
         <div className={styles.navbar}>
           <div className={styles.navbarTopSection}>
             { 
-              state ? <Avatar></Avatar> :
-              <button className={styles.bepro} onClick={() => signInWitPopup(setState)}>Log in</button> 
+              /*  
+                state ? <Avatar></Avatar> :
+                <button className={styles.bepro} onClick={() => signInWitPopup(setState)}>Log in</button> 
+              */
             }
             <div className={styles.searchContainer} onClick={() => document.getElementById('search')?.focus()}>
               <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,18 +103,22 @@ export default function Home() {
               }} />
             </div>
           </div>
-          <button className={styles.bepro} id="bepro" onMouseMove={e => {
-            const element = document.getElementById('bepro');
-            if (!element) return;
-            
-            setMouse([e.clientX - element.offsetLeft, e.clientY - element.offsetTop]);
-          }} style={{
-            "--mousex": `${mouse[0]}px`,
-            "--mousey": `${mouse[1]}px`
-          } as CSSProperties}>
-            🔥 Get pro
-            <div className={styles.glow}></div>  
-          </button>
+          {
+            /**
+              <button className={styles.bepro} id="bepro" onMouseMove={e => {
+                const element = document.getElementById('bepro');
+                if (!element) return;
+                
+                setMouse([e.clientX - element.offsetLeft, e.clientY - element.offsetTop]);
+              }} style={{
+                "--mousex": `${mouse[0]}px`,
+                "--mousey": `${mouse[1]}px`
+              } as CSSProperties}>
+                🔥 Get pro
+                <div className={styles.glow}></div>  
+              </button>
+             */
+          }
         </div>
 
         <div className={styles.icons}>
@@ -118,7 +126,7 @@ export default function Home() {
             <div key={value} style={{
               flex: '1 1 0',
               height: '128px',
-              minWidth: '128px',
+              minWidth: '150px',
             }}>
               <Icon name={value} pro={pro.includes(value)} label={value} showPro={() => setShowingPro(true)}>
                 <img draggable="false" src={`/icons-svg/${value}.svg`} alt="" style={{ /* Unholy CSS magic */ filter: 'invert(100%) sepia(0%) saturate(3356%) hue-rotate(328deg) brightness(101%) contrast(110%)' }} />

@@ -70,10 +70,11 @@ export default function Home() {
             Beautiful <span className={styles.light}>15px</span> icons, <br/> added <span className={styles.light}>weekly</span>.
           </h1>
           <p className={styles.copy}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p>
 
           <div className={styles.heroGradient}></div>
+          <div className={styles.heroGradient2}></div>
         </div>
 
         <div className={styles.navbar}>

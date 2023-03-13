@@ -87,6 +87,22 @@
   z-index: 101;
 }
 
+.heroGradient2 {
+  position: absolute;
+  width: 736.2px;
+  height: 226.2px;
+  left: 50.22px;
+  top: -68.82px;
+
+  background: #F98600;
+  opacity: 0.4;
+  filter: blur(303.5px);
+  transform: rotate(125.44deg);
+  z-index: 101;
+
+  pointer-events: none;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;

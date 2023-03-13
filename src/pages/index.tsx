@@ -23,7 +23,7 @@ export default function Home() {
     'temprature-low','temprature-high','education','fan','gift','briefcase','gift-2','crown','90-degrees','45-degrees','calendar','calendar-add','calendar-minus','calendar-error',
     'calendar-search','trend-downwards','trend-upwards','cloud-rain','cloud','image-add','image-minus','image-cancel','camera-add','camera-minus','camera-search','camera-cancel',
     'align-center-horizontal','align-center-vertical','battery-low','battery-high','battery-medium','erlenmeyer-flask','test-tube','cursor','image-locked','file-locked','video-locked',
-    'database-locked','folder-locked',
+    'database-locked','folder-locked','mic','megaphone','bell-cut','mic-cut','location-pin','map','heart'
   ].sort();
 
   const pro: string[] = [

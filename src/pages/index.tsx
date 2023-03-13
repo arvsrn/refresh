@@ -128,9 +128,7 @@ export default function Home() {
               height: '128px',
               minWidth: '150px',
             }}>
-              <Icon name={value} pro={pro.includes(value)} label={value} showPro={() => setShowingPro(true)}>
-                <img draggable="false" src={`/icons-svg/${value}.svg`} alt="" style={{ /* Unholy CSS magic */ filter: 'invert(100%) sepia(0%) saturate(3356%) hue-rotate(328deg) brightness(101%) contrast(110%)' }} />
-              </Icon>
+              <Icon name={value} pro={pro.includes(value)} label={value} showPro={() => setShowingPro(true)} />
             </div>
           ))}
         </div>

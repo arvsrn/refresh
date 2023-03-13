@@ -1,6 +1,7 @@
 import styles from '@/styles/Icon.module.css';
 import { PropsWithChildren } from 'react';
 import { toast } from 'sonner';
+import React from 'react';
 
 interface Props extends PropsWithChildren {
     label: string;
@@ -10,6 +11,8 @@ interface Props extends PropsWithChildren {
 }
 
 export default function Icon(props: Props) {
+    const iconImage = React.useRef(null);
+
     return (
         <main className={styles.main} onClick={() => {
             const self = document.getElementById(props.name);
@@ -19,12 +22,18 @@ export default function Icon(props: Props) {
             } else if (props.pro) {
                 props.showPro();
             } else {
-                navigator.clipboard.writeText(self.innerHTML);
-                toast.success(`Copied icon "${props.name}"`);
+                if (!iconImage.current) return;
+                
+                // @ts-ignore
+                fetch(iconImage.current.src).then(d => d.body?.getReader().read().then(data => { 
+                    const text = new TextDecoder("utf-8").decode(data.value);
+                    navigator.clipboard.writeText(text);
+                    toast.success(`Copied icon "${props.name}"`);
+                }).catch(err => toast.error(err))).catch(err => toast.error(err));
             }
         }}>
             <div id={props.name} className={styles.svg}>
-                {props.children}
+                <img draggable="false" ref={iconImage} src={`/icons-svg/${props.name}.svg`} alt="" style={{ /* Unholy CSS magic */ filter: 'invert(100%) sepia(0%) saturate(3356%) hue-rotate(328deg) brightness(101%) contrast(110%)' }} />
             </div>
 
             <p className={styles.label}>{props.label}</p>

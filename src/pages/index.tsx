@@ -51,18 +51,18 @@ export default function Home() {
       <Head>
         <title>refresh.</title>
         <meta name="title" content="refresh." />
-        <meta name="description" content="Beautiful 15px icons, refresh'd weekly." />
+        <meta name="description" content="Beautiful 15px icons, refresh'd monthly." />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://refresh.aarv.me/" />
         <meta property="og:title" content="refresh." />
-        <meta property="og:description" content="Beautiful 15px icons, refresh'd weekly." />
+        <meta property="og:description" content="Beautiful 15px icons, refresh'd monthly." />
         <meta property="og:image" content="https://cdn.discordapp.com/attachments/1023648332750520341/1083766698148122654/image.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://refresh.aarv.me/" />
         <meta property="twitter:title" content="refresh." />
-        <meta property="twitter:description" content="Beautiful 15px icons, refresh'd weekly." />
+        <meta property="twitter:description" content="Beautiful 15px icons, refresh'd monthly." />
         <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/1023648332750520341/1083766698148122654/image.png" />
       </Head>
       <main className={styles.main}>

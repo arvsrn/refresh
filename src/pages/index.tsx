@@ -68,14 +68,13 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <h1 className={styles.heading}>
-            Beautiful <span className={styles.light}>15px</span> icons, <br/> added <span className={styles.light}>weekly</span>.
+            Beautiful <span className={styles.light}>15px</span> icons.
           </h1>
           <p className={styles.copy}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            New icons are added ~monthly. Follow on Twitter&nbsp;<a href="https://www.twitter.com/getrefreshd" className={styles.link}><span className={inter.className}>@</span>getrefreshd.</a> Made by&nbsp;<a href="https://www.twitter.com/arvsrn" className={styles.link}><span className={inter.className}>@</span>arvsrn.</a>
           </p>
 
           <div className={styles.heroGradient}></div>
-          <div className={styles.heroGradient2}></div>
         </div>
 
         <div className={styles.navbar}>

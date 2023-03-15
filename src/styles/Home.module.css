@@ -50,8 +50,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  display: flex;
-  align-items: center;
   
   color: #FFFFFF;  
 
@@ -85,22 +83,6 @@
 
   pointer-events: none;
   z-index: 101;
-}
-
-.heroGradient2 {
-  position: absolute;
-  width: 736.2px;
-  height: 226.2px;
-  left: 50.22px;
-  top: -68.82px;
-
-  background: #F98600;
-  opacity: 0.4;
-  filter: blur(303.5px);
-  transform: rotate(125.44deg);
-  z-index: 101;
-
-  pointer-events: none;
 }
 
 .navbar {
@@ -228,6 +210,32 @@
   gap: 16px;
   align-items: center;
   flex: 1;
+}
+
+.link {
+  text-decoration: none;
+  
+  padding-bottom: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(3px);
+  background: rgba(255, 255, 255, 0.4);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.link:hover::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media only screen and (max-width: 612px) {

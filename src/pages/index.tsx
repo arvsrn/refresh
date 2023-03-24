@@ -105,7 +105,6 @@ export default function Home() {
             </div>
           </div>
           {
-            /**
               <button className={styles.bepro} id="bepro" onMouseMove={e => {
                 const element = document.getElementById('bepro');
                 if (!element) return;
@@ -118,7 +117,6 @@ export default function Home() {
                 🔥 Get pro
                 <div className={styles.glow}></div>  
               </button>
-             */
           }
         </div>
 
